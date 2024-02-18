@@ -34,8 +34,8 @@ sd= sorted(z.items(), key=lambda x: x[1],reverse=True)
 
 res=res+"Top 3 words and their count:\n"+""+str(sd[0])+'\n'+""+str(sd[1])+'\n'+""+str(sd[2])+'\n'+"Total no of words in both the files : "+str(total)+"\n"+"IP address: "+str(socket.gethostbyname(socket.gethostname())+"\n")
 
-fo=open("result.txt","w")
+fo=open("/home/output/result.txt","w")
 fo.write(res)
 fo.close()
-fo=open("result.txt","r")
+fo=open("/home/output/result.txt","r")
 print(fo.read()) 
